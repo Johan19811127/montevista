@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+
+  }
+  
+  .animatedText {
+    font-size: 9rem;
+    color:#253150;
+    font-family: 'mhead';
+    white-space: nowrap;
+    overflow: hidden;
+    line-height:1;
+    margin:0;
+
+   
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  .animatedText span{
+    font-size:5rem;
+    text-align:center;
+    line-height:1;
+    margin-top:0px;
+
+  }
+  .slogan {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3.5s; /* Same duration as the typing animation */
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

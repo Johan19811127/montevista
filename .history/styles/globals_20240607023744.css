@@ -1,0 +1,25 @@
+
+
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+body {
+  background-color:#fff;
+  color: #222222
+}
+
+hvh
+
+.h1{
+font-family:mhead;
+font-size:48px;
+}

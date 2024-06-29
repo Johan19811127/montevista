@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*{
+  margin:0;
+padding:0;
+
+}
+
+.badge60{
+  width:60%;
+  filter:drop-shadow(2px 2px 3px rgba(0,0,0,0.25))
+
+}
+body {
+  background-color:#fff;
+  color: #253150
+}
+
+.hvh100{
+  height:100vh;
+
+}
+
+.heroimg{
+  height:100vh;
+  filter:drop-shadow(7px 4px 9px rgba(0,0,0,0.56))
+
+}
+
+.bodytext{
+font-size:1.18rem;
+font-family:'Inter Tight';
+line-height:1.3;
+font-weight:400;
+text-align:justified;
+
+}
+
+.h1{
+font-family:mhead;
+font-size:5rem !important;
+line-height:1;
+margin:0;
+padding:0;
+font-weight:900;
+text-shadow:2px 2px 3px rgba(0,0,0,0.35);
+
+}
+
+.childimg{
+  filter:drop-shadow(2px 2px 3px rgba(0,0,0,0.87));
+  height:100vh;
+}
+
+.h2{
+  font-family:Inter Tight ;
+  font-size:3rem !important;
+  line-height:1;
+  margin:0;
+  padding:0;
+  font-weight:700;
+  }
+
+  .colorsection{
+    /* background-image:url(/colorsection.png); */
+    background:#253150;
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+  }
+  .colorsection .h1{
+    
+      font-family:mhead;
+      color:#fff;
+      font-size:7rem !important;
+      line-height:1;
+      margin:0;
+      padding:0;
+      font-weight:900;
+      text-shadow:2px 2px 3px rgba(0,0,0,0.35);
+      
+      }
+  
+      .colorsection .bodytext{
+        color:#fff;
+        font-size:1.18rem;
+font-family:'Inter';
+line-height:1.3;
+font-weight:400;
+
+      }
+
+      .colorsection svg{
+        width:50px;
+        height:50px;
+        margin-right:20px;
+        fill:#fff;
+        margin-left:50px;
+        text-align:end
+      }
+
+      .contacttext{
+        font-size:1.5rem;
+        line-height:50px;
+        color:#fff;
+        font-family:'Inter';
+        font-weight:600;
+        text-align:start;
+
+      }
+
+      .subtext{
+        font-size:1.1rem;
+        margin-left:15px;
+        font-weight:400;
+      }
+
+      .colorsection a{
+        color:inherit
+      }

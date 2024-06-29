@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*{
+  margin:0;
+padding:0;
+
+}
+
+.badge60{
+  width:40%;
+
+}
+body {
+  background-color:#fff;
+  color: #253150
+}
+
+.hvh100{
+  height:100vh;
+
+}
+
+.heroimg{
+  width:100%;
+
+}
+
+.bodytext{
+font-size:1.1rem;
+font-family:'Inter Tight';
+line-height:1;
+font-weight:400;
+}
+
+.h1{
+font-family:mhead;
+font-size:6rem !important;
+line-height:1;
+margin:0;
+padding:0;
+font-weight:900;
+
+}
+
+.h2{
+  font-family:mhead;
+  font-size:3.8rem !important;
+  line-height:1;
+  margin:0;
+  padding:0;
+  font-weight:900;
+  }

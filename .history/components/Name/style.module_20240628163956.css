@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face{
+  font-family:
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+
+  }
+  
+  .animatedText {
+    font-size: 9rem;
+    color:#FFF;
+    font-family: 'mhead';
+    white-space: nowrap;
+    overflow: hidden;
+    line-height:1;
+    margin:0 !important;
+    text-shadow:8px 6px 10px rgba(0,0,0,0.67);
+
+   
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+
+  .animatedText2 {
+    font-size: 6rem;
+    color:#FFF;
+    font-family: 'mhead';
+    white-space: nowrap;
+    overflow: hidden;
+    line-height:1.1 ;
+    margin-bottom:10px !important;
+    text-shadow:8px 6px 10px rgba(0,0,0,0.67);
+
+   animation-delay:3s;
+
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+
+  .slogan {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    color:#fca615;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 5s; /* Same duration as the typing animation */
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
