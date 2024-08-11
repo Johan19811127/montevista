@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Button to trigger the modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#invoiceModal">
+  Create Invoice
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="invoiceModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+       
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+            <h6 class="modal-title">Create a Sales Invoice</h6>
+        </div>
+        <div class="col-md-6">
+            <img src="https://drive.google.com/file/d/1dVw4Q8yi6W7ESSxEWwa2j1TPqMuVjx3f/view?usp=sharing" style="width:40%;margin-left:30%" alt=" SR Social Logo">
+       <p>Complete this screen to create a new invoice for your customers. Once you click "Process Invoice" it will update your sales with the information on this invoice, It will save a copy of the invoice in the appropraite folder and It will send it to you customer, if your customers email has been added to its account </p>
+       
+        </div>
+        <form>
+          <!-- Company Logo -->
+          <div class="form-group">
+            <label for="companyLogo">Company Logo:</label>
+            <input type="file" class="form-control" id="companyLogo">
+          </div>
+          <!-- Debtor Account -->
+          <div class="form-group">
+            <label for="debtorAccount">Debtor Account:</label>
+            <input type="text" class="form-control" id="debtorAccount">
+          </div>
+          <!-- Invoice Number -->
+          <div class="form-group">
+            <label for="invoiceNumber">Invoice Number:</label>
+            <input type="text" class="form-control" id="invoiceNumber" readonly>
+          </div>
+          <!-- Debtor Name and Address (readonly) -->
+          <div class="form-group">
+            <label for="debtorName">Debtor Name:</label>
+            <input type="text" class="form-control" id="debtorName" readonly>
+          </div>
+          <div class="form-group">
+            <label for="debtorAddress">Debtor Address:</label>
+            <input type="text" class="form-control" id="debtorAddress" readonly>
+          </div>
+          <!-- Service Code -->
+          <div class="form-group">
+            <label for="serviceCode">Service Code:</label>
+            <select class="form-control" id="serviceCode">
+              <option value="service1">Service 1</option>
+              <option value="service2">Service 2</option>
+              <option value="service3">Service 3</option>
+            </select>
+          </div>
+          <!-- Service Name and Price (readonly) -->
+          <div class="form-group">
+            <label for="serviceName">Service Name:</label>
+            <input type="text" class="form-control" id="serviceName" readonly>
+          </div>
+          <div class="form-group">
+            <label for="servicePrice">Service Price:</label>
+            <input type="text" class="form-control" id="servicePrice" readonly>
+          </div>
+          <!-- Quantity -->
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" class="form-control" id="quantity">
+          </div>
+          <!-- Currency -->
+          <div class="form-group">
+            <label for="currency">Currency:</label>
+            <select class="form-control" id="currency">
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="gbp">GBP</option>
+            </select>
+          </div>
+          <!-- Date -->
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+        </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Invoice</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

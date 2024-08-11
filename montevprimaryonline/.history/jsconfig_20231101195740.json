@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDoVfKj1Yb69uwKF64MQIiyAO9NRNdihI0",
+    authDomain: "monte-vista-ae208.firebaseapp.com",
+    projectId: "monte-vista-ae208",
+    storageBucket: "monte-vista-ae208.appspot.com",
+    messagingSenderId: "566941907155",
+    appId: "1:566941907155:web:e69b13de2fa28c59cd3c26",
+    measurementId: "G-T3LQN88XM4"
+  };
+}

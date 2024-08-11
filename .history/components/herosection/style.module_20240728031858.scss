@@ -1,0 +1,19 @@
+.flexholder{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:95vh;
+    @media screen(max-width:900px){
+       flex-direction:column-reverse;
+        
+    
+      }
+}
+
+.flexitems{
+    width:50%;
+    @media screen(max-width:900px){
+        width:100%;
+    }
+
+}

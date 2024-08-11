@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@font-face {
+  font-family: 'mhead';
+  src: url('/fonts/aileron-black-webfont.woff2') format('woff2'),
+       url('/fonts/aileron-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face{
+  font-family:'slogan';
+  src:url('/fonts/bailey.woff2') format ('woff2');
+  font-weight:normal;
+  font-style:normal;
+}
+
+*{
+  padding:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Inter';
+
+  ;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+ 
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.flexholder{
+  display:flex;
+  flex-direction:row;
+  width:100vw;
+  height:95vh;
+  @media (max-width:900px){
+     flex-direction:column-reverse !important;
+      
+  
+    };
+}
+
+.flexitems{
+  width:50%;
+  @media (max-width:900px){
+      width:100vw !important;
+  }
+
+}
+.masonry {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  transition: transform 1s ease-in-out;
+  width:
+}
+
+.masonry-item:hover {
+  transform: translateY(-10px);
+}
+
+.masonry-container {
+  animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.heroimage{
+  max-height:100%;
+  max-width:100%;
+}
