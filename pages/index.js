@@ -9,6 +9,8 @@ import HeroSection from "@/components/herosection/alt";
 import Shortcuts from "@/components/herosection/shortcuts";
 import Contact from "@/components/herosection/contact";
 import Beproud from "@/components/herosection/beproud";
+import Parallax from "@/components/herosection/parallax";
+import StaffList from "@/components/Stafflist";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,14 +18,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      
+       <div className="flex flex-col md:max-w-[1200px] my-auto mx-auto">
     
      <HeroSection></HeroSection>
-    
+  
      <Intro></Intro>
-     <Shortcuts></Shortcuts>
+    
      <Contact></Contact>
      <Beproud></Beproud>
+     </div>
     </main>
   );
 }

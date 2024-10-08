@@ -129,3 +129,9 @@ body {
  
   background-color:#dedede;
 }
+
+.intro{
+  shape-outside: url('/intro.png');
+  shape-margin:1.5rem;
+
+}

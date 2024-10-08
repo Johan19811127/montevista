@@ -3,13 +3,14 @@ import React from 'react'
 
 export default function Heroalt() {
   return (
-  <div className="flex flex-row bg-blue-950 h-90 justify-stretch items-stretch md:flex-column-reverse flex-container mb-3">
+  <div className="flex flex-col md:flex-row  min-h-[90vh} m-auto">
   
  
-  <div className="basis-1/2  self-center md:width:100vw">
-  <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+  <div className="basis-1/3">
+<Image src="/intro.png" width="400" height="800" alt="Monte Vista primary has been around since 1963"></Image>
+  </div>
      
-     <div className="text-center">
+     <div className=" basis-2/3 text-center">
        <h1 className=" text-3xl font-bold tracking-tight text-white md:text-5xl">
          Monte Vista Primary School
        </h1>
@@ -31,8 +32,6 @@ export default function Heroalt() {
        </div>
      </div>
    </div>
-   </div>
-   <div className="basis-1/2  self-end md:width:100vw flexitems"><img src="/heroboy.png" className="w-100 "></img></div>
-  </div>
+ 
   )
 }

@@ -8,19 +8,19 @@ const SchoolRules = () => {
 
     <div className="flex flex-col md:flex-row">
       {/* Sidebar */}
-      <div className="w-full md:w-1/4 md:h-screen md:sticky md:top-0 lg:w-1/5 bg-gray-100 p-4">
+      <div className="w-full md:w-1/4 md:h-screen md:sticky md:top-0 lg:w-1/5 md:bg-gray-100 p-4">
       <div className="flex flex-col md:flex-row">
 
 
-<div className="md:container mx-auto border pb-3 mb-3 border-b-slate-400">
+<div className="md:container mx-auto pb-3 mb-3 ">
   <h1 className=" text-xl font-bold text-center ">Monte Vista Primary School </h1>
   <h1 className=" text-4xl  font-bold text-center mb:4 ">School Rules</h1>
   <a
-  href="/admission_policy.pdf" // Path to the file in the public directory
-  download="Admission_Policy.pdf" // The name of the file that will be downloaded
-  className="flex px-auto align-center justify-center py-3 text-slate-900  font-bold  text-center bg-yellow-500 rounded-lg mx-auto my-3 shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+href="/SchoolRules.pdf" // Path to the file in the public directory
+download="SchoolRules.pdf" // The name of the file that will be downloaded
+className="flex px-auto align-center justify-center py-3 text-slate-900  font-bold border border-b-slate-300 border-t-slate-100 border-l-slate-100 hover:border-none border-r-slate-300 border-t text-center bg-yellow-400 rounded-lg mx-auto my-3 shadow-md hover:bg-yellow-300 hover:shadow-none focus:outline-none focus:ring-1 focus:ring-yellow-500"
 >
-  Download the School Rules
+Download the School Rules
 </a>
 </div>
 </div>
@@ -28,8 +28,8 @@ const SchoolRules = () => {
 
  
 <div className="container mx-auto md:px-5">
-        <h2 className="text-xl font-bold text-center">Table of Contents</h2>
-        <p className="text-sm mb-5 text-center">Click on the links below to jump to the corresponding section in the school rules.</p>
+        <h2 className="text-xl font-bold text-center mt-5">Table of Contents</h2>
+        <p className="text-sm mb-5 text-center">Click on the links below to jump to the corresponding section .</p>
         <ul className="space-y-1">
           <li className="text-default text-justify"><a href="#lining-up" className="text-slate-800 font-semibold hover:underline">A. Lining Up</a></li>
           <li className="text-default text-justify"><a href="#passages" className="text-slate-800 font-semibold hover:underline">B. Passages</a></li>
@@ -59,8 +59,8 @@ const SchoolRules = () => {
 <div className=" w-1/1 md:w-1/4"><Image src="/Badge.png" width="180" height="180" alt="Monte Vista Primary School Badge" className=" mx-auto max-w-[30vw] w-[80%]  "></Image></div>
 <div className=" w-1//1 md:w-3/4  px-4">
 <div className="md:container md:ml-8 md:mx-auto">
-  <h1 className=" text-2xl md:text-4xl font-bold text-left ">Monte Vista Primary School </h1>
-  <h1 className=" text-2xl md:text-3xl font-bold text-left mb:4 ">Admission Policy 2023</h1>
+  <h1 className=" text-2xl md:text-3xl font-bold text-left ">Monte Vista Primary School </h1>
+  <h1 className=" text-2xl md:text-4xl font-bold text-left mb:4 ">School Rules</h1>
 
 <address className="text-start">
   <b className="font-bold mr-3">A:</b>
@@ -69,11 +69,11 @@ const SchoolRules = () => {
    
   <a href="mailto:montevistaprimaryschool@gmail.com" className="text-center"><b className="font-bold mr-3 text-center">E:</b>montevistaprimaryschool@gmail.com</a><br></br>
   <a
-  href="/admission_policy.pdf" // Path to the file in the public directory
-  download="Admission_Policy.pdf" // The name of the file that will be downloaded
-  className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg  my-3 shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+href="/SchoolRules.pdf" // Path to the file in the public directory
+download="SchoolRules.pdf" // The name of the file that will be downloaded
+className="flex px-auto align-center justify-center py-3 text-slate-900  font-bold border border-b-slate-300 border-t-slate-100 border-l-slate-100 hover:border-none border-r-slate-300 border-t text-center bg-yellow-400 rounded-lg mx-auto my-3 shadow-md hover:bg-yellow-300 hover:shadow-none focus:outline-none focus:ring-1 focus:ring-yellow-500"
 >
-  Download the Signed Admission Policy
+Download the School Rules
 </a>
   </div>
 </div>
@@ -315,7 +315,7 @@ const SchoolRules = () => {
             <li className="text-default text-justify">Toilets must be flushed after use.</li>
             <li className="text-default text-justify">No learner may mess with the toilet paper in the toilets.</li>
             <li className="text-default text-justify">Soap at wash-basins in cloakrooms should be used to wash hands after a visit to the toilet.</li>
-            <li className="text-default text-justify">The area in and around toilets (and urinals in boys' toilets) must be kept neat and tidy at all times.</li>
+            <li className="text-default text-justify">The area in and around toilets (and urinals in boys&apos; toilets) must be kept neat and tidy at all times.</li>
             <li className="text-default text-justify">It is not a talking, eating, or meeting place.</li>
             <li className="text-default text-justify">Hanging around the toilet area/change rooms is therefore forbidden.</li>
             <li className="text-default text-justify">Boys are to stand on the step (where applicable) when using the urinal.</li>

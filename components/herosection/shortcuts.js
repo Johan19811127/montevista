@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export default function Shortcuts() {
   return (
-    <div className="flex flex-col h-auto min-h-screen container w-screen lg:w-[80%] lg:px-8  m-auto ">
+    <div className="flex flex-col h-auto min-h-screen container w-full lg:max-w-[1400px] content-center items-center lg:p-8  mx-auto my-auto">
       
         <h1 className="text-2xl font-bold leading-tight text-dblue lg:text-6xl mb-5 text-center">Quick Links</h1>
     
-        <p className=" text-default lg:text-lg text-dblue text-center leading-tight   text-justify"> Our site is designed with user convenience in mind, offering quick and easy access to popular information you might need. Use the navigation links to explore various sections, including Academics,Extracurricular Activities, Our Fees or Admissions. </p>
-        <p className=" text-default lg:text-lg text-dblue text-center leading-tight  mt-5 mb-5 text-justify "> Whether you are looking for detailed information on our curriculum, interested in enrolling your child, or seeking the latest school news and events, these links will guide you directly to your destination. Navigate effortlessly and discover what makes Monte Vista Primary School a nurturing and dynamic environment for young learners.</p>
+        <p className=" text-default lg:text-md text-dblue text-center leading-tight   text-justify"> Our site is designed with user convenience in mind, offering quick and easy access to popular information you might need. Use the navigation links to explore various sections, including Academics,Extracurricular Activities, Our Fees or Admissions. </p>
+        <p className=" text-default lg:text-md text-dblue text-center leading-tight  mb-3 text-justify "> Whether you are looking for detailed information on our curriculum, interested in enrolling your child, or seeking the latest school news and events, these links will guide you directly to your destination. Navigate effortlessly and discover what makes Monte Vista Primary School a nurturing and dynamic environment for young learners.</p>
       
         
        

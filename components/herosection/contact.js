@@ -8,6 +8,8 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 import Contactform from './contactform';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -34,94 +36,54 @@ export default function Contact() {
         router.push('/thank-you');
       };
   return (
-        <div className="container my-auto mx-auto h-auto min-h-screen py-6 px-2 lg:w-[80%] lg:px-8 h-auto min-h-screen flex flex-col  md:flex-row justify-center align-center">
-        <h1 className="text-3xl font-bold tracking-tight mt:auto mb-3 text-center text-dblue sm:text-6xl">Get in touch</h1>
-        <div className="flex flex-col md:flex-row  p-4">
-<div className="md:basis-1/2 text-center w-full my-auto p-8">
-
-<p className="text-default text-dblue text-center leading-tight  font-md mt-5 mb-5 text-justify ">At Monte Vista Primary School, we value open communication and are always eager to hear from our community. Whether you have questions about our curriculum, want to learn more about our Early Development Center, or need assistance with any school-related matter, our dedicated staff is here to help. You can reach us by phone, email, or by visiting our school office during working hours. </p>
-<div className="flex flex-col md:flex-row mx-auto my-auto  p-3">
-
-<div className="md:basis-1/3"><p className=" text-xl mb-3 md:mb-1 lg:text-md font-bold text-dblue text-start "><PhoneAndroidOutlinedIcon className="mr-3  md:w-9 md:h-9 align-self-center" />Telephone :</p></div>
-<div className="md:basis-2/3"><p className="text-default lg:text-md  text-dblue text-start"> <a href="tel:0215584637">(021) 558 4637</a></p></div>
-</div>
-
-<div className="flex flex-col md:flex-row mx-auto my-auto  p-3">
-
-<div className="md:basis-1/3"><p className="contacttextsml text-dblue  mb-3 md:mb-1  font-bold text-xl lg:text-md text-start" style={{lineHeight:'1.2'}}><MailOutlineOutlinedIcon className=" mr-2 md:w-9 md:h-9 align-self-center"/>Email :</p></div>
-<div className="md:basis-2/3"><p className="contacttextsml text-dblue text-default lg:text-md text-start" style={{lineHeight:'1.2'}}> <a href="mailto:montevistaprimaryschool@gmail.com">Main : Montevistaprimaryschool@gmail.com</a><br></br><a href="mailto:fees.montevista@gmail.com">Fees: Fees.montevista@gmail.com</a><br></br><a href="mailto:finance@montevistaps.co.za">Finance: Finance@montevistaps.co.za</a></p></div>
-</div>
-<div className="flex flex-col md:flex-row mx-auto my-auto  p-3">
-
-<div className="md:basis-1/3"><p className="contacttextsml  mb-3 md:mb-1 text-dblue font-bold text-xl  lg:text-md text-start" style={{lineHeight:'1.2'}}><BusinessOutlinedIcon className="mr-2 md:w-9 md:h-9 align-self-center"/>Address :<small className="subtext"></small></p></div>
-<div className="md:basis-2/3"><p className="contacttextsml text-dblue text-default lg:text-md text-start" style={{lineHeight:'1.2'}}> <a href="">7 Huising Avenue<br/>Monte Vista<br/>7460</a></p></div>
-
-</div>
-<div className="flex flex-col md:flex-row mx-auto my-auto  p-3">
-
-<div className="md:basis-1/3"><p className="contacttextsml text-dblue  mb-3 md:mb-1 text-xl font-bold lg:text-md text-start" style={{lineHeight:'1.2'}}><WatchLaterOutlinedIcon className="mr-2 md:w-9 md:h-9 align-self-center"/>Shop Hours:</p></div>
-<div className="md:basis-2/3"><p className="contacttextsml text-dblue text-default lg:text-md text-start"  style={{lineHeight:'1.2'}}> Tuesdays 07:30am - 08:15am <br/>Wednesday 13:00pm - 14:30pm</p></div>
-
-</div>
-</div>
-
-
-
-<div className="w-full my-auto p-8 md:basis-1/2 md:text-center">
-<div className="container">
+    <div className="w-full min-h-screen content-center items-center">
       
-            <h2 className="text-3xl font-bold tracking-tight text-center text-dblue sm:text-4xl">Contact Us</h2>
-            <form onSubmit={handleSubmit}>
-              <div className="mt-5 mb-5">
-                <div className="flex flex-row justify-content-center items-center">
-                <label htmlFor="name" className="basis-1/4 block text-lg text-gray-700">Full Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-              
-                  onChange={handleChange}
-                  required
-                  className="basis-3/4 mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                />
-              </div>
-              </div>
-              <div className="mt-5 mb-5">
-              <div className="flex flex-row justify-content-center items-center">
-             
-                <label htmlFor="email" className="basis-1/4 block text-lg  text-dblue">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="basis-3/4 mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-100 focus:border-blue-900 sm:text-sm"
-                />
-              </div></div>
-              <div className="mt-5 mb-5">
-              <div className="flex flex-row justify-content-center items-center">
-                <label htmlFor="message" className="basis-1/4 block text-lg  text-dblue">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="8"
-                  required
-                  className="basis-3/4 mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                ></textarea>
-              </div></div>
-              <button
-                type="submit"
-                className="w-[50%] py-2 px-4 border border-transparent rounded-md shadow-sm text-lg font-bold text-white bg-dblue "
-              >
-                Submit
-              </button>
-            </form>
- </div></div></div></div>
+       
+        <div className="flex flex-col md:flex-row my-auto p-2">
+       
+<div className="lg:basis-3/8 text-center my-auto w-full p-3 md:p-4">
+<Image src="/contactus.png" width="600" height="900" alt="contact us at Monte Vista Primary School" className=" w-[90%] "/>
+
+</div>
+<div className="lg:basis-5/8 text-center my-auto w-full  p-3 md:p-4">
+<h1 className="text-4xl font-bold tracking-tight mb-3 text-center text-gray-800 md:text-6xl">Get in touch</h1>
+<p className="text-default text-gray-700 text-center leading-tight  font-md mt-5 mb-5 text-justify ">At Monte Vista Primary School, we value open communication and are always eager to hear from our community. Whether you have questions about our curriculum, want to learn more about our Early Development Center, or need assistance with any school-related matter, our dedicated staff is here to help. You can reach us by phone, email, or by visiting our school office during working hours. </p>
+<div className=" flex flex-row">
+
+<div className="basis-1/5 lg:basis-1/6 items-center content-center"><p className=" text-xl mb-3 md:mb-1 lg:text-md font-bold text-gray-800 "><PhoneAndroidOutlinedIcon className="mr-3  md:w-9 md:h-9 align-self-center" /></p></div>
+<div className="basis-4/5 lg:basis-5/6 text-start"><p className="text-lg lg:text-xl font-bold text-gra y-800 text-start">Telephone :</p> <a href="tel:0215584637" className="text-md lg:text-md font-semibold text-start">(021) 558 4637</a></div>
+</div>
+
+<div className="flex flex-row  p-3">
+
+<div className="basis-1/5 lg:basis-1/6 items-center content-center"><p className=" text-xl mb-3 md:mb-1 lg:text-md font-bold text-gray-800 "><MailOutlineOutlinedIcon className=" mr-2 md:w-9 md:h-9 align-self-center"/></p></div>
+<div className="basis-4/5 lg:basis-5/6 text-start"><p className="text-lg lg:text-xl font-bold text-gray-800 text-start">Email:</p><p className="text-md lg:text-md font-semibold text-start "> Main :<a href="mailto:montevistaprimaryschool@gmail.com" className="ml-8 text-md lg:text-md text-gray-700 font-normal text-start"> Montevistaprimaryschool@gmail.com</a></p>
+<p className="text-md lg:text-md font-semibold text-start ">Fees: <a href="mailto:fees.montevista@gmail.com" className="ml-9 text-md lg:text-md text-gray-700 font-normal text-start">Fees.montevista@gmail.com</a></p>
+<p className="text-md lg:text-md font-semibold text-start ">Finance:<a href="mailto:finance@montevistaps.co.za" className="ml-3 text-md lg:text-md text-gray-700 font-normal text-start"> Finance@montevistaps.co.za</a></p>
+<p className="text-md lg:text-md font-semibold text-start ">Store:<a href="mailto:finance@montevistaps.co.za" className="ml-7 text-md lg:text-md text-gray-700 font-normal text-start"> Clothingstore@montevistaps.co.za</a></p></div>
+</div>
+<div className="flex flex-row mx-auto my-auto  p-3">
+
+<div className="basis-1/5 lg:basis-1/6 items-center content-center"><p className=" text-xl mb-3 md:mb-1 lg:text-md font-bold text-gray-800 "><BusinessOutlinedIcon className="mr-2 md:w-9 md:h-9 align-self-center"/></p></div>
+<div className="basis-4/5 lg:basis-5/6 text-start"><p className="text-lg lg:text-xl font-bold text-gray-800 text-start">Address:</p>
+ <a href="">7 Huising Avenue<br/>Monte Vista<br/>7460</a></div>
+
+</div>
+<div className="flex flex-row mx-auto my-auto  p-3">
+
+<div className="basis-1/5 lg:basis-1/6 items-center content-center"><p className=" text-xl mb-3 md:mb-1 lg:text-md font-bold text-gray-800 "><WatchLaterOutlinedIcon className="mr-2 md:w-9 md:h-9 align-self-center"/></p></div>
+<div className="basis-4/5 lg:basis-5/6 text-start"><p className="text-lg lg:text-xl font-bold text-gray-800 text-start">Shop Hours:</p><p>Tuesdays 07:30am - 08:15am <br/>Wednesday 13:00pm - 14:30pm</p></div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+ 
+
 
   )
 }

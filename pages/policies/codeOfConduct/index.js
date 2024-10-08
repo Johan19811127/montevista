@@ -3,32 +3,84 @@ import React from 'react';
 
 const CodeOfConduct = () => {
   return (
-    <div className="w-full h-fit bg-gray-200">
-    <div className="p-8 max-w-4xl mx-auto bg-white">
-        <div className="flex flex-row">
+    <div className="flex flex-col md:flex-row text-slate-800">
+    {/* Sidebar */}
+    <div className="w-full md:w-1/4 md:h-screen md:sticky md:top-0 lg:w-1/5 md:bg-gray-200 md:border md:border-right-slate-500 p-4">
+    <div className="flex flex-col md:flex-row">
 
-<div className="basis-1/4"><Image src="/Badge.png" width="180" height="180" alt="Monte Vista Primary School Badge" className="w-[80%] ml-[10%] "></Image></div>
-<div className="basis-3/4  px-4">
-      <header className="text-center mb-8">
-        <h1 className="text-2xl font-bold">Monte Vista Primary School</h1>
-        <p className="text-2xl font-semibold">Code of Conduct for Learners</p>
-        <address className="mt-2">
-          Huisinglaan / Huising Avenue, Monte Vista, 7460 <br />
-          Tel: 021 558 4637 | Fax: 021 558 715<br />
-          Email: <a href="mailto:montevistaprimaryschool@gmail.com" className="text-blue-500">montevistaprimaryschool@gmail.com</a>
-        </address>
-        <a
-      href="/admission_policy.pdf" // Path to the file in the public directory
-      download="Admission_Policy.pdf" // The name of the file that will be downloaded
-      className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg  my-3 shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-    >
-      Download a copy of the Code of Conduct
-    </a>
-      </header>
-      </div></div>
+
+<div className="container mx-auto  pb-3 mb-3 ">
+<h1 className=" text-xl font-bold text-center ">Monte Vista Primary School </h1>
+<h1 className=" text-2xl  font-bold text-center mb-4 ">Code Of Conduct</h1>
+<a
+href="/CodeOfConduct.pdf" // Path to the file in the public directory
+download="CodeOfConduct.pdf" // The name of the file that will be downloaded
+className="flex px-auto align-center justify-center py-3 text-slate-900  font-bold border border-b-yellow-500 border-t-yellow-200 border-l-yellow-200 hover:border-none border-r-yellow-500  shadow-md text-center bg-yellow-400 rounded-lg mx-auto my-3 shadow-md hover:bg-yellow-300 hover:shadow-none focus:outline-none focus:ring-1 focus:ring-yellow-500"
+>
+Download the Code of Conduct
+</a>
+</div>
+</div>
+
+<div className="border border-t-slate-500 w-auto mb-5 mx-5"></div>
+
+<div className="container mx-auto px-5">
+      <h2 className="text-xl font-bold text-center">Table of Contents</h2>
+      <p className="text-sm mb-3 md:mb-8 text-center">Click on the links below to jump to the corresponding section in the school rules.</p>
+      <ul className="space-y-1">
+        <li className="text-default text-justify"><a href="#introduction" className="text-slate-800 font-semibold hover:underline">1. Introduction</a></li>
+        <li className="text-default text-justify"><a href="#teaching" className="text-slate-800 font-semibold hover:underline">2. Teaching and Education</a></li>
+        <li className="text-default text-justify"><a href="#authority" className="text-slate-800 font-semibold hover:underline">3. Authority</a></li>
+        <li className="text-default text-justify"><a href="#values" className="text-slate-800 font-semibold hover:underline">4. Values and Norms</a></li>
+        <li className="text-default text-justify"><a href="#amenities" className="text-slate-800 font-semibold hover:underline">5. Physical Amenities</a></li>
+        <li className="text-default text-justify"><a href="#attire" className="text-slate-800 font-semibold hover:underline">6. Attire</a></li>
+        <li className="text-default text-justify"><a href="#discipline" className="text-slate-800 font-semibold hover:underline">7. Discipline</a></li>
+        <li className="text-default text-justify"><a href="#levels" className="text-slate-800 font-semibold hover:underline">8. Levels of Application of Discipline</a></li>
+        <li className="text-default text-justify"><a href="#positive" className="text-slate-800 font-semibold hover:underline">9.Positive Reinforcement</a></li>
+        
+      </ul>
+    </div>
+    </div>
+    {/* Main Content */}
+    <div className="w-full md:w-3/4 p-4">
+    <main className="flex">
+
+
+<div className="max-w-5xl mx-auto p-6 bg-white  rounded-lg">
+<div className="flex flex-col md:flex-row">
+<div className="hidden md:flex">
+<div className=" w-1/1 md:w-1/4 flex items-center content-center"><Image src="/Badge.png" width="180" height="180" alt="Monte Vista Primary School Badge" className=" mx-auto max-w-[30vw] w-[80%]  "></Image></div>
+<div className=" w-1//1 md:w-3/4  px-4">
+<div className="md:container md:ml-8 md:mx-auto">
+<h1 className=" text-2xl md:text-3xl font-bold text-left ">Monte Vista Primary School </h1>
+<h1 className=" text-2xl md:text-4xl font-bold text-left mb-4 ">Code of Conduct</h1>
+
+<address className="text-start">
+<b className="font-bold mr-3">A:</b>
+ Huising Avenue, Monte Vista 7460    </address>
+  <a href="tel:+27215584637" className="text-center" ><b className="font-bold mr-3 text-center">T:</b>021 558 4637</a><br></br>
+ 
+<a href="mailto:montevistaprimaryschool@gmail.com" className="text-center"><b className="font-bold mr-3 text-center">E:</b>montevistaprimaryschool@gmail.com</a><br></br>
+<a
+href="/CodeOfConduct.pdf" // Path to the file in the public directory
+download="CodeOfConduct.pdf" // The name of the file that will be downloaded
+className="flex px-auto align-center justify-center py-3 text-slate-900  font-bold border border-b-slate-500 border-t-slate-100 border-l-slate-100 hover:border-none border-r-slate-500 border-t text-center bg-yellow-400 rounded-lg mx-auto my-3 shadow-md hover:bg-yellow-300 hover:shadow-none focus:outline-none focus:ring-1 focus:ring-yellow-500"
+>
+Download the Code of Conduct
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+    <div className="w-full h-fit bg-gray-200">
+    <div className=" px-5 max-w-4xl mx-auto bg-white">
+     
       <hr className="divide-solid mt-3 mb-9 divide-slate-800 opacity-80"></hr>
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3 ">A. Introduction</h2>
+        <h2 className="text-2xl font-semibold mb-3" id="introduction">1. Introduction</h2>
         <p className="text-default mb-3 text-justify">
           Monte Vista Primary School strives towards the highest standards of teaching and education. This is accomplished by the close co-operation and mutual support of the role players in the education triangle: the educator, the learner, and the parent.
         </p>
@@ -41,7 +93,7 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3">B. Teaching and Education</h2>
+        <h2 className="text-2xl font-semibold my-3" id="teaching">2. Teaching and Education</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           To encourage a balanced interaction between educators, learners, and parents and to ensure a healthy educational environment.
@@ -53,7 +105,7 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3">C. Authority</h2>
+        <h2 className="text-2xl font-semibold my-3" id="authority">3. Authority</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           To clearly spell out the structure of authority within the school so that all learners can understand their individual responsibilities and roles. A structure of authority is essential for the effective and orderly administration of a school.
@@ -65,7 +117,7 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold">D. Values and Norms</h2>
+        <h2 className="text-2xl font-semibold" id="values">4. Values and Norms</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           The school is seen as an extension of the community and renders a service to the community. It must therefore contribute towards the cultivation of acceptable values and norms for the children of the community.
@@ -77,7 +129,7 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3">E. Physical Amenities</h2>
+        <h2 className="text-2xl font-semibold my-3" id="amenities">5. Physical Amenities</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           To ensure that the physical amenities of the school will be utilised towards the education and development of the learner and to cultivate the necessary respect for and pride in the existing amenities.
@@ -89,19 +141,19 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3">F. Attire</h2>
+        <h2 className="text-2xl font-semibold my-3" id="attire">6. Attire</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           To develop the unity of and pride in the school by means of a uniform and neat dress code.
         </p>
         <h3 className="text-lg font-semibold my-2">Implications for the learner:</h3>
          <p className="text-default mb-3 text-justify">
-          Learners should appreciate the importance of a neat school uniform. A standardised uniform is also more economical. Learners' hair, jewellery, and other accessories should be in accordance with the prescribed school rules. Sportswear should always be worn as stipulated in the school rules.
+          Learners should appreciate the importance of a neat school uniform. A standardised uniform is also more economical. Learners&apos; hair, jewellery, and other accessories should be in accordance with the prescribed school rules. Sportswear should always be worn as stipulated in the school rules.
         </p>
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold">G. Discipline</h2>
+        <h2 className="text-2xl font-semibold" id="discipline">7. Discipline</h2>
         <h3 className="text-lg font-semibold my-2">Aim:</h3>
          <p className="text-default mb-3 text-justify">
           To instill in the learners an understanding and a sense of discipline which will lead to maintaining self-discipline. This will ensure that teaching and educational development will continue unhindered.
@@ -113,7 +165,7 @@ const CodeOfConduct = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold my-3">H. Levels of Application of Discipline</h2>
+        <h2 className="text-2xl font-semibold my-3" id="levels">8. Levels of Application of Discipline</h2>
          <p className="text-default mb-3 text-justify">
           In order to maintain and promote good order and discipline, a system of merits (positive points) and demerits (negative points) has been implemented. Monte Vista uses the App Class Dojo as the discipline system. This App allows educators, parents, and learners to interact constructively. Educators have the ability to load merits and demerits and to communicate it with parents and learners. Parents need to have an account on Class Dojo to be able to view their child’s behaviour at school.
         </p>
@@ -228,17 +280,21 @@ const CodeOfConduct = () => {
         </ul>
         <h4 className="text-lg font-semibold my-2">Punishment for Level 4 Infringements:</h4>
          <p className="text-default mb-3 text-justify">Learners who are found guilty of level 4 infringements can, after a fair hearing by the Governing Body, be suspended from school immediately for a period not exceeding one week.</p>
-        <h2 className="text-2xl font-semibold">I. Positive Reinforcement</h2>
+        <h2 className="text-2xl font-semibold" id ="positive">9. Positive Reinforcement</h2>
          <p className="text-default mb-3 text-justify">
           While applying discipline, a policy of positive reinforcement of exemplary behaviour is encouraged. According to this policy good behaviour is rewarded with positive Dojo points. Each class will have a reward system for achieving a set amount of Dojo points. This serves as motivation and positive reinforcement of good behaviour.
         </p>
          <p className="text-default mb-3 text-justify">
-          The school's policy is that punishment will not be applied in the spirit of retribution. Punishment is applied to correct the misbehaviour of the learner to the benefit of the learner and other learners. The mutual cooperation between parents and educator remains of the utmost importance.
+          The school&apos;s policy is that punishment will not be applied in the spirit of retribution. Punishment is applied to correct the misbehaviour of the learner to the benefit of the learner and other learners. The mutual cooperation between parents and educator remains of the utmost importance.
         </p>
          <p className="text-default mb-3 text-justify">
           Accepted and approved by the Governing Body.
         </p>
       </section>
+    </div>
+    </div>
+    </div>
+    </main>
     </div>
     </div>
   );

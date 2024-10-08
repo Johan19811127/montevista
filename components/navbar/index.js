@@ -22,6 +22,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -39,12 +40,13 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white-950 border-b-4 border-slate-300 ">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 ">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Monte Vista Primary School</span>
-            <img alt="" src="/Badge.png" className="h-12 w-auto" />
+    <header className="bg-white-950 border-b-4 border-slate-300 text-slate-800 ">
+      <nav aria-label="Global" className="mx-auto flex  items-center justify-between p-6 lg:px-8 ">
+        <div className="flex flex-row lg:flex-1">
+          <a href="#" className="flex flex-row items-center text-slate-800">
+          <Image alt="" width="60" height="60" src="/Badge.png" className="h-10  w-10 mr-5" />
+            <span className="lg:text-lg font-semibold ">Monte Vista Primary School</span>
+          
           </a>
         </div>
         <div className="flex lg:hidden">
