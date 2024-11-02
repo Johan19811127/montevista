@@ -1,0 +1,1 @@
+pages/ourTeam/index.js
