@@ -21,7 +21,7 @@ export default function Home() {
 
 <div className="md:container mx-auto pb-3 mb-3 ">
   <h1 className=" text-xl font-bold text-center ">Monte Vista Primary School </h1>
-  <h1 className=" text-3xl  font-bold text-center  ">Admission Policy</h1>
+  <h1 className=" text-3xl  font-bold text-center mb:4 ">Admission Policy</h1>
   <a
 href="/AdmissionPolicy.pdf" // Path to the file in the public directory
 download="AdmissionPolicy.pdf" // The name of the file that will be downloaded
